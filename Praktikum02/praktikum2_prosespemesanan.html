@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web GameStore</title>
+</head>
+<body style="font-family: Arial; background-color:#1b1b2f; color:white; margin:0; padding:0;">
+
+<header style="background-color: #162447; text-align: center; padding: 20px;">
+  <h1>Aflah GameStore</h1>
+  <h3>Tempat Pemesanan Game Favoritmu</h3>
+</header>
+
+<hr style="border: 3px solid rgb(0, 0, 0);">
+
+<section style="padding:10px;">
+  <h1 style="color: blue; text-align: center;">Daftar Game</h1><br>
+  <table style="width:100%; text-align:center;" cellpadding="20">
+    <tr>
+      <td>
+        <img src="image/foto1.jpeg" width="250"><br>
+        <h2>Grand Turismo</h2>
+        <input type="file"><br>
+        <button onclick="kirimgambar('Grand Turismo')" style="background-color: blue; color: white; padding: 8px 16px; border: none; border-radius: 6px;">Kirim</button>
+      </td>
+      <td>
+        <img src="image/foto2.jpeg" width="200"><br>
+        <h2>Mario Kart</h2>
+         <input type="file"><br>
+          <button onclick="kirimgambar('Mario Kart')" style="background-color: blue; color: white; padding: 8px 16px; border: none; border-radius: 6px;">Kirim</button>
+
+      </td>
+      <td>
+        <img src="image/foto3.jpeg" width="200"><br>
+        <h2>NFS Heat</h2>
+         <input type="file"><br>
+          <button onclick="kirimgambar('NFS Heat')" style="background-color: blue; color: white; padding: 8px 16px; border: none; border-radius: 6px;">Kirim</button>
+      </td>
+      <td>
+        <img src="image/foto4.jpeg" width="190"><br>
+        <h2>Hotwheels Unleashed</h2>
+         <input type="file"><br>
+          <button onclick="kirimgambar('Hotwheels Unleashed')" style="background-color: blue; color: white; padding: 8px 16px; border: none; border-radius: 6px;">Kirim</button>
+      </td>
+    </tr>
+
+  </table>
+
+</section>
+
+<hr style="border: 3px solid black;">
+
+<section style="padding:10px;">
+  <h1 style="color: blue; text-align: center;">Form Pemesanan</h1><br>
+  <form id="orderForm">
+
+    <label>Nama Lengkap:</label><br>
+    <input id="nama" type="text" placeholder="Masukkan Nama Anda" style="width: 100%; padding: 8px;">
+    <br><br>
+
+    <label>Email:</label><br>
+    <input id="email" type="email" placeholder="Masukkan Email Anda" style="width: 100%; padding: 8px;">
+    <br><br>
+
+    <label>Pilih Game:</label><br>
+    <select id="game" style="width: 100%; padding: 8px;">
+      <option value="Grand Turismo">Grand Turismo</option>
+      <option value="Mario Kart">Mario Kart</option>
+      <option value="NFS Heat">NFS Heat</option>
+      <option value="Hotwheels Unleashed">Hotwheels Unleashed</option>
+    </select>
+
+    <br><br>
+
+    <label>Jumlah:</label><br>
+    <input id="jumlah" type="number" value="1" min="1" style="width: 60px; padding: 6px;"><br><br>
+
+    <button type="submit" style="background-color: blue; color: white; padding: 10px 20px; border: none; border-radius: 8px;">
+      Pesan Sekarang
+    </button>
+  </form>
+</section>
+
+<script>
+document.getElementById("orderForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const nama = document.getElementById("nama").value;
+  const email = document.getElementById("email").value;
+  const game = document.getElementById("game").value;
+  const jumlah = document.getElementById("jumlah").value;
+
+  localStorage.setItem("nama", nama);
+  localStorage.setItem("email", email);
+  localStorage.setItem("game", game);
+  localStorage.setItem("jumlah", jumlah);
+
+ 
+  let gambar = "";
+  switch (game) {
+    case "Grand Turismo":
+      gambar = "image/foto1.jpeg";
+      break;
+    case "Mario Kart":
+      gambar = "image/foto2.jpeg";
+      break;
+    case "NFS Heat":
+      gambar = "image/foto3.jpeg";
+      break;
+    case "Hotwheels Unleashed":
+      gambar = "image/foto4.jpeg";
+      break;
+  }
+  
+ localStorage.setItem("gambar", gambar);
+  
+  window.location.href = "praktikum2_hasilpemesanan.html";
+});
+</script>
+
+</body>
+</html>
