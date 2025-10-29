@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.kotak {
+    background-color: #eedcca;
+    width: 90%;
+    margin: 50px auto; 
+    padding: 20px;
+    border: 2px solid #a8a8a8;
+}
+
+#header {
+    background-color: #efb96e;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+h1 {
+    color: #1c49cf;
+    font-size: 40px;
+    font-family: "Arial Black", Verdana, sans-serif;;
+    margin: 10px;
+    font-weight: bold;
+    
+}
+
+blockquote {
+    background-color: #ffd500;
+    border: 1px dotted #333;
+    font-weight: bold;
+    line-height: 1.3;
+    padding: 10px 15px;
+    width: 75%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+ul li {
+    display: inline;
+    margin: 1 10px;
+}
+
+ul li a {
+    color: #664170;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.gambar {
+  text-align: center;
+}
+
+.gambar img {
+    width: 200px;
+    height: auto;
+}
+
+.isi p:first-of-type::first-letter {
+    font-size: 50px;          
+    color: blue;           
+    position: relative;
+    top: -8px;  
+} 
+
+#profil ul{
+    text-align: left;
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+.koleksi {
+    text-align: center;
+}
+
+.koleksi img {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+
+.promo {
+    margin: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: 2px dotted black;
+    border-radius: 15px;
+    background-color: #008cf8;
+    text-align: center;
+}
+
+.promo ol {
+   display: inline-block;
+   padding-left: 0;
+   text-align: left;
+    
+ 
+}
+
+.promo li a {
+    color: black;
+}
+
+
+
+
