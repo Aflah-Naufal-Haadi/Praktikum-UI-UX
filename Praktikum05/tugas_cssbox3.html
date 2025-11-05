@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box 3</title>
+
+    <style>
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+           
+        }
+
+        .kotak-hijau {
+            background-color: lime;
+            border: 3px solid black;
+            height: 80px;
+        }
+
+        .kotak-kuning {
+            background-color: yellow;
+            border: 3px solid black;
+            width: 140px;
+            height: 140px;
+        }
+
+        .kotak-merah {
+            background-color: red;
+            border: 3px solid black;
+            flex: 1;
+            height: 140px;
+        }
+
+        .kotak-biru {
+            background-color: blue;
+            border: 3px solid black;
+            flex: 1;
+            height: 140px
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="kotak-hijau"></div>
+
+        <div class="row">
+            <div class="kotak-kuning"></div>
+            <div class="kotak-merah"></div>
+        </div>
+
+        <div class="row">
+            <div class="kotak-kuning"></div>
+            <div class="kotak-biru"></div>
+        </div>
+
+    </div>
+</body>
+</html>

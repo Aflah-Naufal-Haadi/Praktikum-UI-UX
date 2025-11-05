@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box 4</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .top-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .kotak-kuning {
+            background-color: yellow;
+            border: 2px solid black;
+            width: 170px;
+            height: 60px;
+        }
+
+        .kotak-merah {
+            background-color: red;
+            border: 2px solid black;
+            flex: 1;
+            height: 60px;
+        }
+
+        .middle-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .kotak-hijau {
+            background-color: lime;
+            border: 2px solid black;
+            width: 170px;
+            height: 450px;
+        }
+
+        .kotak-abu_abu {
+            background-color: gray;
+            border: 2px solid black;
+            flex: 1;
+            height: 450px;
+        }
+        
+        .kotak-biru_terang {
+            background-color: aqua;
+            border: 2px solid black;
+            width: 170px;
+            height: 450px;
+        }
+
+        .kotak-biru {
+            background-color: blue;
+            border: 2px solid black;
+            height: 65px;
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="top-row">
+            <div class="kotak-kuning"></div>
+            <div class="kotak-merah"></div>
+        </div>
+
+        <div class="middle-row">
+            <div class="kotak-hijau"></div>
+            <div class="kotak-abu_abu"></div>
+            <div class="kotak-biru_terang"></div>
+        </div>
+
+        <div class="kotak-biru"></div>
+
+    </div>
+
+</body>
+</html>
