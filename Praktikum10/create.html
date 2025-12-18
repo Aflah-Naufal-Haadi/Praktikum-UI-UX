@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Seminar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<!-- ===== NAVBAR (SAMA SEPERTI INDEX & REGISTRASI) ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/LEGO_logo.svg"
+                 alt="Logo" width="50" class="me-2">
+            Navbar
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="form.html">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="register.html">Registrasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="create.html">Create</a>
+                </li>
+                 <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Kegiatan
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="datapeserta.html">Peserta Kegiatan Seminar Rembulan I September 2017</a></li>
+                            </ul>
+                        </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Peserta
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="datapeserta.html">Data Peserta Seminar</a></li>
+                            </ul>
+                        </li>
+            </ul>
+             <form class="d-flex">
+                <input class="form-control" type="search" placeholder="Search">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== FORM CREATE SEMINAR ===== -->
+<div class="container mt-4">
+    <h5 class="mb-3">Create New Seminar</h5>
+
+    <div class="card">
+        <div class="card-body">
+
+            <div class="mb-3">
+                <label class="form-label">Kode</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Nama Kegiatan</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tanggal Mulai</label>
+                <input type="date" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tanggal Akhir</label>
+                <input type="date" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Biaya</label>
+                <input type="number" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Tempat</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Latitude</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Longitude</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Jenis Kegiatan</label>
+                <select class="form-select">
+                    <option>Select</option>
+                    <option>Seminar</option>
+                    <option>Workshop</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">PIC</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Deskripsi</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+
+            <button class="btn btn-primary">Simpan</button>
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
